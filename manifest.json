@@ -1,0 +1,17 @@
+  {
+  "name": "DC Viewer",
+  "description": "dcvoewer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": [
+    "https://gall.dcinside.com/mgallery/board/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gall.dcinside.com/mgallery/board/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
